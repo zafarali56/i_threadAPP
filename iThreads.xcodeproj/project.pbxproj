@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E167B9E2BCE54E3002BDF21 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E167B9D2BCE54E3002BDF21 /* LoginView.swift */; };
 		9E6930C22BC3D3F1009C4790 /* iThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6930C12BC3D3F1009C4790 /* iThreadsApp.swift */; };
 		9E6930C42BC3D3F1009C4790 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6930C32BC3D3F1009C4790 /* ContentView.swift */; };
 		9E6930C62BC3D3F4009C4790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E6930C52BC3D3F4009C4790 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E167B9D2BCE54E3002BDF21 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9E6930BE2BC3D3F1009C4790 /* iThreads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThreads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6930C12BC3D3F1009C4790 /* iThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iThreadsApp.swift; sourceTree = "<group>"; };
 		9E6930C32BC3D3F1009C4790 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E167B942BCE5401002BDF21 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9E167B9B2BCE549A002BDF21 /* Auth */,
+				9E167B9A2BCE5495002BDF21 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9E167B952BCE5413002BDF21 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9E6930C12BC3D3F1009C4790 /* iThreadsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9E167B962BCE5433002BDF21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E167B972BCE5437002BDF21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E167B982BCE543A002BDF21 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E167B992BCE543F002BDF21 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9E167B9A2BCE5495002BDF21 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9E6930C32BC3D3F1009C4790 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9E167B9B2BCE549A002BDF21 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9E167B9C2BCE54C3002BDF21 /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9E167B9C2BCE54C3002BDF21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E167B9D2BCE54E3002BDF21 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9E6930B52BC3D3F1009C4790 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +122,12 @@
 		9E6930C02BC3D3F1009C4790 /* iThreads */ = {
 			isa = PBXGroup;
 			children = (
-				9E6930C12BC3D3F1009C4790 /* iThreadsApp.swift */,
-				9E6930C32BC3D3F1009C4790 /* ContentView.swift */,
+				9E167B952BCE5413002BDF21 /* App */,
+				9E167B942BCE5401002BDF21 /* Core */,
+				9E167B992BCE543F002BDF21 /* Utils */,
+				9E167B982BCE543A002BDF21 /* Services */,
+				9E167B972BCE5437002BDF21 /* Models */,
+				9E167B962BCE5433002BDF21 /* Extensions */,
 				9E6930C52BC3D3F4009C4790 /* Assets.xcassets */,
 				9E6930C72BC3D3F4009C4790 /* Preview Content */,
 			);
@@ -137,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E167B9E2BCE54E3002BDF21 /* LoginView.swift in Sources */,
 				9E6930C42BC3D3F1009C4790 /* ContentView.swift in Sources */,
 				9E6930C22BC3D3F1009C4790 /* iThreadsApp.swift in Sources */,
 			);
